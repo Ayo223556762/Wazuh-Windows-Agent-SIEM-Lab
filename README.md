@@ -30,7 +30,7 @@ Command Line (Kali + Windows)
 
 ## 🧰 Step-by-Step Setup
 
-1. Prepare VirtualBox Network
+# 1. Prepare VirtualBox Network
 
 Both VMs were attached to Host-Only Adapter
 
@@ -42,7 +42,7 @@ Windows (Agent): 192.168.56.10
 
 📷 Insert screenshot of both VM network settings here
 
-2. Install Wazuh Manager on Kali
+# 2. Install Wazuh Manager on Kali
 
 Since Kali is unsupported by default, we bypassed the system check:
 
@@ -55,7 +55,7 @@ sudo bash wazuh-install.sh --ignore-check
 
 📷 Insert screenshot of successful installation or Wazuh services running here
 
-3. Verify Required Ports Are Open
+# 3. Verify Required Ports Are Open
 
 sudo ufw allow 1514/tcp
 sudo ufw allow 1515/tcp
@@ -73,7 +73,7 @@ tcp 0 0 0.0.0.0:1515 0.0.0.0:* LISTEN
 
 📷 Insert screenshot of ufw rules or ss -tuln output here
 
-4. Generate Wazuh Agent Auth Key
+# 4. Generate Wazuh Agent Auth Key
 
 sudo /var/ossec/bin/manage_agents
 
@@ -85,7 +85,7 @@ Copy the generated key for use on Windows
 
 📷 Insert screenshot of key generation here
 
-5. Assign Kali IP Manually
+# 5. Assign Kali IP Manually
 
 sudo ip addr add 192.168.56.11/24 dev eth0
 sudo ip link set eth0 up
@@ -96,7 +96,7 @@ ip a | grep 192
 
 📷 Insert screenshot of Kali IP confirmation
 
-6. Install Wazuh Agent on Windows 11
+# 6. Install Wazuh Agent on Windows 11
 
 Transferred .msi file manually
 
@@ -112,7 +112,7 @@ Clicked Save, then Manage > Start Agent
 
 📷 Insert screenshot of Agent Manager GUI with fields filled
 
-7. Confirm Agent Connection
+# 7. Confirm Agent Connection
 
 On Kali:
 
