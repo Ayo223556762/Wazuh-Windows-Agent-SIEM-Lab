@@ -128,7 +128,7 @@ Optional: Tail the Wazuh log to see connection in real-time:
 
 sudo tail -f /var/ossec/logs/ossec.log
 
-✅ Results
+# ✅ Results
 
 Agent successfully registered and shown as Active in manager
 
@@ -138,9 +138,7 @@ Simulated SIEM behavior by centralizing Windows endpoint logs
 
 Fully functioning offline Wazuh SIEM lab with proof of concept
 
-📸 Screenshots to Include
-
-Put all images into a screenshots/ folder. Reference them in the README as shown above:
+## 📸 Screenshots Included (See Screenshots Folder)
 
 VM network adapter settings
 
@@ -154,17 +152,10 @@ Wazuh Agent GUI (Windows)
 
 Agent status on Kali
 
-📦 Repo Suggestions
 
-Repo name: wazuh-windows-agent-siem-lab
+## 🙌 Credits
 
-.gitignore: include *.iso, *.ova, *.vdi, etc.
-
-Keep your README.md, screenshots/, and any relevant configs
-
-🙌 Credits
-
-Built and tested by [Your Name], a cybersecurity grad student using Kali Linux and Windows 11 on VirtualBox to simulate real-world endpoint monitoring with a basic open-source SIEM.
+Built and tested by Ayobami Adejumo, a cybersecurity grad student using Kali Linux and Windows 11 on VirtualBox to simulate real-world endpoint monitoring with a basic open-source SIEM.
 
 Feel free to fork or use this as a base for blue team, SOC, or SIEM demos.
 
